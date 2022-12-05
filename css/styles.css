@@ -930,12 +930,19 @@ address {
 	background-color: var(--accent-color);
 }
 
+.policy-checkbox:focus + .policy-icon,
+.policy-checkbox:hover + .policy-icon {
+	border-color: var(--accent-color);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 .checkbox-link {
 	position: relative;
 	font-size: 14px;
 	line-height: calc(24 / 14);
 	letter-spacing: 0.03em;
 	color: var(--accent-color);
+	outline: transparent;
 }
 
 .checkbox-link::after {
@@ -947,6 +954,12 @@ address {
 	height: 1px;
 	background-color: var(--accent-color);
 }
+
+.checkbox-link:focus::after,
+.checkbox-link:hover::after {
+	box-shadow: 0px 2px 4px rgba(4, 13, 30, 0.9);
+} 
+
 /* кнопка форми в модалці */
 
 .modal-form-btn {
@@ -964,9 +977,14 @@ address {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	transition: background-color 250ms var(--cubic);
+	outline: transparent;
 }
 
-.modal-form-btn:hover,
+.modal-form-btn:hover{
+	background-color: var(--secondary-accent-color);
+}
+
 .modal-form-btn:focus {
 	background-color: var(--secondary-accent-color);
+    border: 1px solid #36384b;
 }
