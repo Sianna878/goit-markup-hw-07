@@ -19,53 +19,50 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/portfolio.min.css"/>
   </head>
   <body>
     <!-- HEADER OF SITE -->
     <header class="part-header">
-      <div class="container header-container">
-        <nav class="navigation">
-          <!-- логотип -->
-          <a href="./index.html" class="site-nav logo" lang="en"
-            >Web<span class="logo-black">Studio</span>
-          </a>
-          <!-- навігація сайту -->
-          <ul class="header-nav">
-            <li><a href="./index.html" class="link-nav">Студія</a></li>
-            <li>
-              <a href="./portfolio.html" class="link-nav current">Портфоліо</a>
-            </li>
-            <li><a href="#" class="link-nav">Контакти</a></li>
-          </ul>
-        </nav>
-        <!-- контактна інформація -->
-        <ul class="header-contacts">
-          <li>
-            <a href="mailto:info@devstudio.com" class="info-link">
-              <svg class="contact-icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="info-link"
-              ><svg class="contact-icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
+			<div class="part-header__container container">
+					<!-- логотип -->
+					<a href="./index.html" class="logo page-header__logo link" lang="en">Web<span class="logo--black">Studio</span> </a>
+					<!-- навігація сайту -->
+        <nav class="part-header__nav">
+					<ul class="site-nav list">
+						<li class="site-nav__item"><a href="./index.html" class="site-nav__link link">Студія</a></li>
+						<li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link link site-nav__link--current">Портфоліо</a></li>
+						<li class="site-nav__item"><a href="#" class="site-nav__link link">Контакти</a></li>
+					</ul>
+				</nav>
+				<!-- контактна інформація -->
+				<ul class="auth-contacts list">
+					<li class="auth-contacts__item">
+						<a href="mailto:info@devstudio.com" class="auth-contacts__link link">
+							<svg class="auth-contacts__icon" width="16" height="12">
+								<use href="./images/icons.svg#icon-envelope"></use>
+							</svg>
+							info@devstudio.com</a
+						>
+					</li>
+					<li class="auth-contacts__item">
+						<a href="tel:+380961111111" class="auth-contacts__link link"
+							><svg class="auth-contacts__icon" width="10" height="16">
+								<use href="./images/icons.svg#icon-smartphone"></use>
+							</svg>
+							+38 096 111 11 11</a
+						>
+					</li>
+				</ul>
+			</div>
+		</header>
     <!-- MAIN CONTENT-"PORTFOLIO" -->
     <main>
       <section class="portfolio section">
         <div class="container">
           <h1 class="visually-hidden">Наші проєкти</h1>
           <!-- фільтр-кнопки -->
-          <ul class="filter-set">
+          <ul class="filter-set list">
             <li>
               <button type="button" class="filter-btn button current">
                 Усі
@@ -85,9 +82,9 @@
             </li>
           </ul>
           <!-- проєкти -->
-          <ul class="card-set">
+          <ul class="card-set list">
             <li class="item">
-              <a class="project-link" href="#">
+              <a class="project-link link" href="#">
                 <div class="project-wrap">
                   <img
                     src="./images/site-technocrack.jpg"
@@ -108,7 +105,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="project-link" href="#">
+              <a class="project-link link" href="#">
                 <div class="project-wrap">
                   <img
                     src="./images/poster-basketball.jpg"
@@ -131,7 +128,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="project-link" href="#">
+              <a class="project-link link" href="#">
                 <div class="project-wrap">
                   <img
                     src="./images/restaurant-seafood.jpg"
@@ -154,7 +151,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="project-link" href="#">
+              <a class="project-link link" href="#">
                 <div class="project-wrap">
                   <img
                     src="./images/project-prime.jpg"
@@ -177,7 +174,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="project-link" href="#">
+              <a class="project-link link" href="#">
                 <div class="project-wrap">
                   <img
                     src="./images/project-boxes.jpg"
@@ -200,7 +197,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="project-link" href="#">
+              <a class="project-link link" href="#">
                 <div class="project-wrap">
                   <img
                     class="project-card"
@@ -224,7 +221,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="project-link" href="#">
+              <a class="project-link link" href="#">
                 <div class="project-wrap">
                   <img
                     src="./images/limited-edition.jpg"
@@ -247,7 +244,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="project-link" href="#">
+              <a class="project-link link" href="#">
                 <div class="project-wrap">
                   <img
                     src="./images/project-lab.jpg"
@@ -270,7 +267,7 @@
               </a>
             </li>
             <li class="item">
-              <a class="project-link" href="#">
+              <a class="project-link link" href="#">
                 <div class="project-wrap">
                   <img
                     src="./images/growing-business.jpg"
@@ -298,59 +295,79 @@
     </main>
     <!-- FOOTER OF SITE -->
     <footer class="part-footer">
-			<div class="container footer-div">
-				<div class="footer-contacts">
+			<div class="part-footer__container container">
+				<div class="footer-address-field">
 					<!-- логотип -->
-					<a href="./index.html" class="logo-footer" lang="en">Web<span class="logo-white">Studio</span> </a>
+					<a href="./index.html" class="page-footer__logo logo link" lang="en">Web<span class="logo--white">Studio</span> </a>
 					<address>
 						<!-- контакти -->
-						<ul class="contact-list">
-							<li class="contact-item">
+						<ul class="auth-address list">
+							<li class="auth-address__item">
 								<a
-									class="map-location link-contact"
+									class="auth-address__link link auth-address__link--white"
 									href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
 									target="_blank"
 									rel="noopener noreferrer nofollow"
 									>м. Київ, пр-т Лесі Украінки, 26
 								</a>
 							</li>
-							<li class="contact-item">
-								<a href="mailto:info@devstudio.com" class="link-contact">info@devstudio.com</a>
+							<li class="auth-address__item">
+								<a href="mailto:info@devstudio.com" class="auth-address__link link">info@devstudio.com</a>
 							</li>
-							<li class="contact-item">
-								<a href="tel:+380961111111" class="link-contact">+38 096 111 11 11 </a>
+							<li class="auth-address__item">
+								<a href="tel:+380961111111" class="auth-address__link link">+38 096 111 11 11 </a>
 							</li>
 						</ul>
 					</address>
 				</div>
 				<!-- соціальні мережі -->
-				<div class="footer-social-field">
-					<span class="join">Приєднуйтесь</span>
-					<ul class="social-network-list">
-						<li class="social-network-item">
-							<a class="social-network-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-								<svg class="footer-icon" width="20" height="20">
+				<div class="soc-invite">
+					<span class="soc-invite__title">Приєднуйтесь</span>
+					<ul class="soc-network list">
+						<li class="soc-network__item">
+							<a
+								class="soc-network__link link soc-network__link--gray-white"
+								href="#"
+								target="_blank"
+								rel="noopener noreferrer nofollow"
+							>
+								<svg class="soc-network__icon" width="20" height="20">
 									<use href="./images/icons.svg#icon-instagram"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="social-network-item">
-							<a class="social-network-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-								<svg class="footer-icon" width="20" height="20">
+						<li class="soc-network__item">
+							<a
+								class="soc-network__link link soc-network__link--gray-white"
+								href="#"
+								target="_blank"
+								rel="noopener noreferrer nofollow"
+							>
+								<svg class="soc-network__icon" width="20" height="20">
 									<use href="./images/icons.svg#icon-twitter"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="social-network-item">
-							<a class="social-network-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-								<svg class="footer-icon" width="20" height="20">
+						<li class="soc-network__item">
+							<a
+								class="soc-network__link link soc-network__link--gray-white"
+								href="#"
+								target="_blank"
+								rel="noopener noreferrer nofollow"
+							>
+								<svg class="soc-network__icon" width="20" height="20">
 									<use href="./images/icons.svg#icon-facebook"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="social-network-item">
-							<a class="social-network-link" href="#" target="_blank" rel="noopener noreferrer nofollow">
-								<svg class="footer-icon" width="20" height="20">
+						<li class="soc-network__item">
+							<a
+								class="soc-network__link link soc-network__link--gray-white"
+								href="#"
+								target="_blank"
+								rel="noopener noreferrer nofollow"
+							>
+								<svg class="soc-network__icon" width="20" height="20">
 									<use href="./images/icons.svg#icon-linkedin"></use>
 								</svg>
 							</a>
@@ -358,19 +375,13 @@
 					</ul>
 				</div>
 				<!-- форма в footer -->
-				<div class="footer-form-field">
-					<span class="sign-title">Підпишіться на розсилку</span>
-					<form class="footer-form">
-					    <input
-							type="email"
-							name="email"
-							class="footer-input"
-							aria-label="Email"
-							placeholder="E-mail"
-							required
-						/>
-						<button type="submit" class="btn-sign button">Підписатися
-							<svg class="icon-send" width="24" height="24">
+				<div class="subscription">
+					<span class="subscription__title">Підпишіться на розсилку</span>
+					<form class="form-subscription">
+						<input type="email" name="email" class="form-subscription__input" aria-label="Email" placeholder="E-mail" required />
+						<button type="submit" class="btn-subscribe button"
+							>Підписатися
+							<svg class="btn-subscribe__icon" width="24" height="24">
 								<use href="./images/icons.svg#icon-send"></use>
 							</svg>
 						</button>

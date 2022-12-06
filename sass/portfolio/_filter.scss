@@ -1,0 +1,28 @@
+.filter-set {
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.filter-btn {
+	padding: 6px 22px;
+	display: block;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: calc(26 / 16);
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--secondary-text-color);
+	background-color: var(--filter-btn-bg-color);
+	transition: color 250ms var(--cubic), background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+
+	&:hover,
+    &:focus,
+    &.current {
+	color: var(--btn-text-color);
+	background-color: var(--accent-color);
+	box-shadow: var(--filter-btn-shadow);
+}
+}

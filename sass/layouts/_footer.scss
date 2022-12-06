@@ -1,0 +1,125 @@
+
+.part-footer {
+	padding: 60px 0;
+	background-color: var(--border-bg-color);
+}
+
+.part-footer__container {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+
+// адреса власників в footer 
+
+.footer-address-field {
+	margin-right: 70px;
+}
+
+.page-footer__logo {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.logo--white {
+	color: var(--logo-footer-color);
+}
+
+.auth-address__item:not(:last-child) {
+	margin-bottom: 9px;
+}
+
+.auth-address__link {
+	font-size: 14px;
+	line-height: calc(24 / 14);
+	color: var(--contact-footer-color);
+	transition: color 250ms var(--cubic);
+
+	&:hover,
+    &:focus {
+	color: var(--accent-color);
+    }
+}
+
+.auth-address__link--white {
+	color: var(--footer-text-color);
+}
+
+// соц-мережі в footer
+
+.soc-invite {
+	margin-right: 93px;
+}
+
+.soc-invite__title {
+	display: block;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: calc(16 / 14);
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--footer-text-color);
+}
+
+.soc-network__link--gray-white {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+// форма в footer
+
+.subscription {
+	display: block;
+}
+
+.subscription__title {
+	display: block;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: calc(16 / 14);
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--footer-text-color);
+}
+
+.form-subscription {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.form-subscription__input {
+	width: 358px;
+	height: 50px;
+	padding-left: 16px;
+	font-size: 16px;
+	line-height: calc(20 / 16);
+	letter-spacing: 0.03em;
+	background-color: inherit;
+	outline: transparent;
+	color: rgba(255, 255, 255, 0.6);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	transition: border-color 250ms var(--cubic);
+
+	&::placeholder {
+	font-size: 16px;
+	line-height: calc(20 / 16);
+	letter-spacing: 0.03em;
+	align-items: center;
+	color: rgba(255, 255, 255, 0.6);
+    }
+
+	&:focus,
+	&:hover {
+	border-color: var(--accent-color);
+    }
+}
+
+.form-subscription__icon {
+	margin-left: 10px;
+	fill: currentColor;
+}
