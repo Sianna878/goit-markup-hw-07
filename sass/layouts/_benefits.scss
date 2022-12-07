@@ -1,13 +1,15 @@
-.benefit-list {
+// секція переваги
+
+.benefits {
 	display: flex;
 	gap: 30px;
 }
 
-.benefit-item {
+.benefits__item {
 	flex-basis: calc((100% - 90px) / 4);
 }
 
-.benefits-icons-box {
+.benefits__icon-wrap {
 	display: flex;
 	width: 270px;
 	height: 120px;
@@ -18,7 +20,7 @@
 	border-radius: 4px;
 }
 
-.benefit-title {
+.benefits__title {
 	margin-bottom: 10px;
 	font-size: 14px;
 	line-height: calc(16 / 14);
@@ -27,7 +29,7 @@
 	color: var(--secondary-text-color);
 }
 
-.benefit-text {
+.benefits__text {
 	font-size: 14px;
 	line-height: calc(24 / 14);
 	letter-spacing: 0.03em;

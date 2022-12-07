@@ -121,7 +121,7 @@ address {
   color: var(--accent-color);
 }
 
-.hero__btn, .form-subscription__btn, .main-form__btn {
+.hero-btn, .subscribe-btn, .main-form-btn {
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -138,12 +138,12 @@ address {
   transition: background-color 250ms var(--cubic);
 }
 
-.btn-hero:hover,
-.btn-hero:focus,
-.form-subscription__btn:hover,
-.form-subscription__btn:focus,
-.main-form__btn:hover,
-.main-form__btn:focus {
+.hero-btn:hover,
+.hero-btn:focus,
+.subscribe-btn:hover,
+.subscribe-btn:focus,
+.main-form-btn:hover,
+.main-form-btn:focus {
   background-color: var(--secondary-accent-color);
 }
 
@@ -177,6 +177,15 @@ address {
   fill: currentColor;
 }
 
+.section-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
 .part-header {
   border-bottom: 1px solid var(--border-header-color);
 }
@@ -185,7 +194,7 @@ address {
   display: flex;
 }
 
-.logo--black {
+.logo__black {
   color: var(--logo-part-color);
 }
 
@@ -201,7 +210,7 @@ address {
   align-items: center;
 }
 
-.site-nav {
+.menu {
   display: flex;
   gap: 50px;
 }
@@ -212,13 +221,13 @@ address {
   align-items: center;
 }
 
-.site-nav__link,
+.menu__link,
 .auth-contacts__link {
   display: flex;
   padding: 32px 0;
 }
 
-.site-nav__link {
+.menu__link {
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -227,10 +236,10 @@ address {
   color: var(--secondary-text-color);
   transition: color 250ms var(--cubic);
 }
-.site-nav__link:hover, .site-nav__link:focus, .site-nav__link.site-nav__link--current {
+.menu__link:hover, .menu__link:focus, .menu__link.menu__link--current {
   color: var(--accent-color);
 }
-.site-nav__link::after, .site-nav__link.site-nav__link--current::after {
+.menu__link::after, .menu__link.menu__link--current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -243,7 +252,7 @@ address {
   transform: scaleX(0);
   transition: transform 250ms var(--cubic);
 }
-.site-nav__link:hover::after, .site-nav__link:focus::after, .site-nav__link.site-nav__link--current::after {
+.menu__link:hover::after, .menu__link:focus::after, .menu__link.menu__link--current::after {
   transform: scaleX(1);
 }
 
@@ -265,7 +274,7 @@ address {
   margin-right: 10px;
 }
 
-.hero {
+.page-hero {
   max-width: 1600px;
   height: 600px;
   padding: 200px 0;
@@ -276,7 +285,7 @@ address {
   background-position: center;
 }
 
-.hero__container {
+.page-hero__container {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -284,7 +293,7 @@ address {
   align-items: center;
 }
 
-.hero__title {
+.page-hero__title {
   width: 696px;
   margin-bottom: 30px;
   font-weight: 900;
@@ -295,16 +304,16 @@ address {
   color: var(--hero-title-color);
 }
 
-.benefit-list {
+.benefits {
   display: flex;
   gap: 30px;
 }
 
-.benefit-item {
+.benefits__item {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.benefits-icons-box {
+.benefits__icon-wrap {
   display: flex;
   width: 270px;
   height: 120px;
@@ -315,7 +324,7 @@ address {
   border-radius: 4px;
 }
 
-.benefit-title {
+.benefits__title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -324,7 +333,7 @@ address {
   color: var(--secondary-text-color);
 }
 
-.benefit-text {
+.benefits__text {
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
@@ -333,15 +342,6 @@ address {
 
 .activity {
   padding-top: 0;
-}
-
-.activity-title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.1666666667;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
 }
 
 .activity-list {
@@ -380,15 +380,6 @@ address {
   background-color: var(--section-team-bg-color);
 }
 
-.page-team__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.1666666667;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
-
 .team-member {
   display: flex;
   gap: 30px;
@@ -423,15 +414,6 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-}
-
-.clients__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.1666666667;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
 }
 
 .clients-list {
@@ -485,7 +467,7 @@ address {
   margin-bottom: 20px;
 }
 
-.logo--white {
+.logo__white {
   color: var(--logo-footer-color);
 }
 
@@ -800,4 +782,93 @@ address {
 .main-form__btn-wrap {
   display: flex;
   justify-content: center;
+}
+
+.filter-set {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 6px 22px;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  background-color: var(--filter-btn-bg-color);
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+}
+.filter-btn:hover, .filter-btn:focus, .filter-btn.current {
+  color: var(--btn-text-color);
+  background-color: var(--accent-color);
+  box-shadow: var(--filter-btn-shadow);
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-set > .item {
+  width: calc((100% - 60px) / 3);
+}
+
+.project-link {
+  display: block;
+  transition: box-shadow 250ms var(--cubic);
+}
+.project-link:hover, .project-link:focus {
+  box-shadow: var(--projects-card-shadow);
+}
+
+.project-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.5555555556;
+  letter-spacing: 0.03em;
+  color: var(--project-overlay-color);
+  background-color: var(--overlay-bg-color);
+  transform: translateY(100%);
+  transition: transform 250ms var(--cubic);
+}
+.project-link:hover .project-text, .project-link:focus .project-text {
+  transform: translateY(0);
+}
+
+.card-content {
+  padding: 20px 24px;
+  border: 1px solid var(--border-project-color);
+  border-top: 0;
+}
+
+.card-heading {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+}
+
+.project-doing {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,6 @@
 // загальні значення кнопок сайту
 
-.hero__btn, .form-subscription__btn, .main-form__btn {
+.hero-btn, .subscribe-btn, .main-form-btn {
 	width: 200px;
 	height: 50px;
 	font-weight: 700;
@@ -17,11 +17,11 @@
 	transition: background-color 250ms var(--cubic);
 }
 
-.btn-hero:hover,
-.btn-hero:focus,
-.form-subscription__btn:hover,
-.form-subscription__btn:focus,
-.main-form__btn:hover,
-.main-form__btn:focus  {
+.hero-btn:hover,
+.hero-btn:focus,
+.subscribe-btn:hover,
+.subscribe-btn:focus,
+.main-form-btn:hover,
+.main-form-btn:focus  {
 	background-color: var(--secondary-accent-color);
 }
