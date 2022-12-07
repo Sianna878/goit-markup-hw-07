@@ -26,7 +26,7 @@
 			<div class="part-header__container container">
 				<!-- логотип -->
 				<a href="./index.html" class="logo page-header__logo link" lang="en"
-					>Web<span class="logo__black">Studio</span>
+					>Web<span class="logo__part-black">Studio</span>
 				</a>
 				<!-- навігація сайту -->
 				<nav class="part-header__nav">
@@ -122,23 +122,23 @@
 			<section class="page-activity section">
 				<div class="container">
 					<h2 class="section-title">Чим ми займаємося</h2>
-					<ul class="activity-list list">
-						<li class="activity-item">
+					<ul class="activity list">
+						<li class="activity__item">
 							<img src="./images/computer.jpg" alt="розробка сайтів" width="370" height="294" />
-							<div class="activity-item-wrap">
-								<p class="activity-item-title">Десктопні додатки</p>
+							<div class="activity__item-wrap">
+								<p class="activity__item-title">Десктопні додатки</p>
 							</div>
 						</li>
-						<li class="activity-item">
+						<li class="activity__item">
 							<img src="./images/smartphone.jpg" alt="створення мобільних додатків" width="370" height="294" />
-							<div class="activity-item-wrap">
-								<p class="activity-item-title">Мобільні додатки</p>
+							<div class="activity__item-wrap">
+								<p class="activity__item-title">Мобільні додатки</p>
 							</div>
 						</li>
-						<li class="activity-item">
+						<li class="activity__item">
 							<img src="./images/tablet.jpg" alt="дизайн" width="370" height="294" />
-							<div class="activity-item-wrap">
-								<p class="activity-item-title">Дизайнерські рішення</p>
+							<div class="activity__item-wrap">
+								<p class="activity__item-title">Дизайнерські рішення</p>
 							</div>
 						</li>
 					</ul>
@@ -304,45 +304,45 @@
 			<section class="page-clients section">
 				<div class="container">
 					<h2 class="section-title">Постійні клієнти</h2>
-					<ul class="clients-list list">
-						<li class="client-item">
-							<a href="#" class="client-link link">
-								<svg class="client-icon" width="106" height="60">
+					<ul class="clients list">
+						<li class="clients__item">
+							<a href="#" class="clients__link link">
+								<svg class="clients__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logo-1"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="client-item">
-							<a href="#" class="client-link link">
-								<svg class="client-icon" width="106" height="60">
+						<li class="clients__item">
+							<a href="#" class="clients__link link">
+								<svg class="clients__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logo-2"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="client-item">
-							<a href="#" class="client-link link">
-								<svg class="client-icon" width="106" height="60">
+						<li class="clients__item">
+							<a href="#" class="clients__link link">
+								<svg class="clients__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logo-3"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="client-item">
-							<a href="" class="client-link link">
-								<svg class="client-icon" width="106" height="60">
+						<li class="clients__item">
+							<a href="" class="clients__link link">
+								<svg class="clients__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logo-4"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="client-item">
-							<a href="#" class="client-link link">
-								<svg class="client-icon" width="106" height="60">
+						<li class="clients__item">
+							<a href="#" class="clients__link link">
+								<svg class="clients__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logo-5"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="client-item">
-							<a href="" class="client-link">
-								<svg class="client-icon" width="106" height="60">
+						<li class="clients__item">
+							<a href="" class="clients__link">
+								<svg class="clients__icon" width="106" height="60">
 									<use href="./images/icons.svg#icon-Logo-6"></use>
 								</svg>
 							</a>
@@ -354,11 +354,11 @@
 		<!-- FOOTER OF SITE -->
 		<footer class="part-footer">
 			<div class="part-footer__container container">
-				<div class="footer-address-field">
+				<div class="part-footer__content">
 					<!-- логотип -->
-					<a href="./index.html" class="page-footer__logo logo link" lang="en">Web<span class="logo__white">Studio</span> </a>
-					<address>
-						<!-- контакти -->
+					<a href="./index.html" class="page-footer__logo logo link" lang="en">Web<span class="logo__part-white">Studio</span> </a>
+					<!-- контакти -->
+					<address class="footer-address">
 						<ul class="auth-address list">
 							<li class="auth-address__item">
 								<a
@@ -456,62 +456,60 @@
 					</svg>
 				</button>
 				<p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
-				<form class="main-form">
-					<div class="main-form__field">
-						<label for="user-name" class="main-form__label">Ім'я</label>
-						<div class="main-form__wrap">
+				<form class="order-form">
+					<div class="order-form__field">
+						<label for="user-name" class="order-form__label">Ім'я</label>
+						<div class="order-form__wrap">
 							<input
 								type="text"
 								name="user-name"
-								class="main-form__user main-form__input"
+								class="order-form__user order-form__input"
 								placeholder=" "
 								id="user-name"
 								required
 							/>
-							<svg class="main-form__icon" width="18" height="18">
+							<svg class="order-form__icon" width="18" height="18">
 								<use href="./images/icons.svg#icon-person"></use>
 							</svg>
 						</div>
 					</div>
-					<div class="main-form__field">
-						<label for="user-tel" class="main-form__label">
-							<span class="form-label-text">Телефон</span>
-						</label>
-						<div class="main-form__wrap">
+					<div class="order-form__field">
+						<label for="user-tel" class="order-form__label">Телефон</label>
+						<div class="order-form__wrap">
 							<input
 								type="tel"
 								name="user-tel"
-								class="main-form__user main-form__input"
+								class="order-form__user order-form__input"
 								placeholder=" "
 								id="user-tel"
 								required
 							/>
-							<svg class="main-form__icon" width="18" height="18">
+							<svg class="order-form__icon" width="18" height="18">
 								<use href="./images/icons.svg#icon-phone"></use>
 							</svg>
 						</div>
 					</div>
-					<div class="main-form__field">
-						<label for="user-email" class="main-form__label">Пошта</label>
-						<div class="main-form__wrap">
+					<div class="order-form__field">
+						<label for="user-email" class="order-form__label">Пошта</label>
+						<div class="order-form__wrap">
 							<input
 								type="email"
 								name="user-email"
-								class="main-form__user main-form__input"
+								class="order-form__user order-form__input"
 								placeholder=" "
 								id="user-email"
 							/>
-							<svg class="main-form__icon" width="18" height="18">
+							<svg class="order-form__icon" width="18" height="18">
 								<use href="./images/icons.svg#icon-email"></use>
 							</svg>
 						</div>
 					</div>
-					<div class="main-form__field">
-						<label for="user-text" class="main-form__label">Коментар</label>
+					<div class="order-form__field">
+						<label for="user-text" class="order-form__label">Коментар</label>
 						<textarea
 							name="user-text"
 							id="user-text"
-							class="main-form__comment main-form__input"
+							class="order-form__comment order-form__input"
 							placeholder="Введіть текст"
 						></textarea>
 					</div>
@@ -523,8 +521,8 @@
 						Погоджуюся з розсилкою та приймаю
 						<a href="#" class="policy__link link">Умови договору</a>
 					</label>
-					<div class="main-form__btn-wrap">
-						<button type="submit" class="main-form-btn button">Відправити</button>
+					<div class="order-form__btn-wrap">
+						<button type="submit" class="order-btn button">Відправити</button>
 					</div>
 				</form>
 			</div>

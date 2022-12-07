@@ -1,19 +1,19 @@
 
-.activity {
+.page-activity {
 	padding-top: 0;
 }
 
-.activity-list {
+.activity {
 	display: flex;
 	gap: 30px;
 }
 
-.activity-item {
+.activity__item {
 	position: relative;
 	flex-basis: calc((100% - 60px) / 3);
 }
 
-.activity-item-wrap {
+.activity__item-wrap {
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -25,7 +25,7 @@
 	background-color: rgba(47, 48, 58, 0.8);
 }
 
-.activity-item-title {
+.activity__item-title {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: calc(16 / 14);

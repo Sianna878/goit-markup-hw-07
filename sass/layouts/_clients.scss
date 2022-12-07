@@ -1,16 +1,16 @@
 
-.clients-list {
+.clients {
 	display: flex;
 	gap: 30px;
 }
 
-.client-item {
+.clients__item {
 	width: 170px;
 	height: 92px;
 	flex-basis: calc((100% - 150px) / 6);
 }
 
-.client-link {
+.clients__link {
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -28,6 +28,6 @@
     }
 }
 
-.client-icon {
+.clients__icon {
 	fill: currentColor;
 }

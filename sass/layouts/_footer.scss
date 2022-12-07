@@ -11,9 +11,7 @@
 	justify-content: space-between;
 }
 
-// адреса власників сайту 
-
-.footer-address-field {
+.part-footer__content {
 	margin-right: 70px;
 }
 
@@ -22,9 +20,11 @@
 	margin-bottom: 20px;
 }
 
-.logo__white {
+.logo__part-white {
 	color: var(--logo-footer-color);
 }
+
+// адреса власників сайту 
 
 .auth-address__item:not(:last-child) {
 	margin-bottom: 9px;
