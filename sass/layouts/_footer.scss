@@ -1,3 +1,4 @@
+// FOOTER
 
 .part-footer {
 	padding: 60px 0;
@@ -10,7 +11,7 @@
 	justify-content: space-between;
 }
 
-// адреса власників в footer 
+// адреса власників сайту 
 
 .footer-address-field {
 	margin-right: 70px;
@@ -45,7 +46,7 @@
 	color: var(--footer-text-color);
 }
 
-// соц-мережі в footer
+// соц-мережі
 
 .soc-invite {
 	margin-right: 93px;
@@ -62,12 +63,12 @@
 	color: var(--footer-text-color);
 }
 
-.soc-network__link--gray-white {
+.soc-network__link--bottom {
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-// форма в footer
+// форма-підписка
 
 .subscription {
 	display: block;

@@ -185,6 +185,16 @@ address {
   display: flex;
 }
 
+.logo--black {
+  color: var(--logo-part-color);
+}
+
+.page-header__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .part-header__nav {
   margin-right: auto;
   display: flex;
@@ -200,16 +210,6 @@ address {
   display: flex;
   gap: 50px;
   align-items: center;
-}
-
-.logo--black {
-  color: var(--logo-part-color);
-}
-
-.page-header__logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .site-nav__link,
@@ -522,7 +522,7 @@ address {
   color: var(--footer-text-color);
 }
 
-.soc-network__link--gray-white {
+.soc-network__link--bottom {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
 }
