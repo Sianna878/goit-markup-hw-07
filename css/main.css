@@ -425,7 +425,7 @@ address {
   color: var(--main-text-color);
 }
 
-.clients-title {
+.clients__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.1666666667;
@@ -703,7 +703,7 @@ address {
   border-color: var(--accent-color);
 }
 
-.form-user-input {
+.main-form__user {
   height: 40px;
   padding: 11px 12px 11px 42px;
 }
@@ -725,24 +725,24 @@ address {
   fill: var(--accent-color);
 }
 
-.form-user-comment {
+.main-form__comment {
   height: 120px;
   padding: 12px 16px;
   resize: none;
 }
-.form-user-comment::-moz-placeholder {
+.main-form__comment::-moz-placeholder {
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.form-user-comment:-ms-input-placeholder {
+.main-form__comment:-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.form-user-comment::placeholder {
+.main-form__comment::placeholder {
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
