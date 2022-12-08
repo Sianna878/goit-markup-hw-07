@@ -11,13 +11,13 @@
 @import './components/section-title';
 
 @import './layouts/header';
-@import './layouts/hero';
-@import './layouts/benefits';
-@import './layouts/activity';
-@import './layouts/team';
-@import './layouts/clients';
+@import './layouts/page-studio/hero';
+@import './layouts/page-studio/benefits';
+@import './layouts/page-studio/activity';
+@import './layouts/page-studio/team';
+@import './layouts/page-studio/clients';
 @import './layouts/footer';
 @import './layouts/modal';
 
-@import './layouts/filter';
-@import './layouts/projects';
+@import './layouts/page-portfolio/filter';
+@import './layouts/page-portfolio/projects';

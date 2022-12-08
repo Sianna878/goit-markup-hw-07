@@ -56,7 +56,7 @@
 
 	&:hover,
 	&:focus,
-	&.menu__link--current {
+	&--current {
 		color: var(--accent-color);
 	}
 

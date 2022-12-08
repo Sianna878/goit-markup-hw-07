@@ -6,7 +6,7 @@
 	gap: 8px;
 }
 
-.filter-btn {
+.filter-set__btn {
 	padding: 6px 22px;
 	display: block;
 	font-weight: 500;
@@ -20,7 +20,7 @@
 
 	&:hover,
     &:focus,
-    &.current {
+    &--current {
 	color: var(--btn-text-color);
 	background-color: var(--accent-color);
 	box-shadow: var(--filter-btn-shadow);
