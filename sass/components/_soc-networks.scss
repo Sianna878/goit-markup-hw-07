@@ -19,13 +19,13 @@
 	align-items: center;
 	border-radius: 50%;
     
-	color: #afb1b8;
+	color: var(--primary-icon-color);
 	transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
     
     &:hover,
     &:focus {
 	background-color: var(--accent-color);
-	color: #ffffff;
+	color: var(--secondary-icon-color);
     }
 }
 

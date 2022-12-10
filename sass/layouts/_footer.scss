@@ -2,7 +2,7 @@
 
 .part-footer {
 	padding: 60px 0;
-	background-color: var(--border-bg-color);
+	background-color: var(--footer-bg-color);
 }
 
 .part-footer__container {
@@ -21,7 +21,7 @@
 }
 
 .logo__part-white {
-	color: var(--logo-footer-color);
+	color: var(--white-text-color);
 }
 
 // адреса власників сайту 
@@ -33,7 +33,7 @@
 .auth-address__link {
 	font-size: 14px;
 	line-height: calc(24 / 14);
-	color: var(--contact-footer-color);
+	color: var(--footer-main-text-color);
 	transition: color 250ms var(--cubic);
 
 	&:hover,
@@ -43,7 +43,7 @@
 }
 
 .auth-address__link--white {
-	color: var(--footer-text-color);
+	color: var(--white-text-color);
 }
 
 // соц-мережі
@@ -60,11 +60,11 @@
 	line-height: calc(16 / 14);
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: var(--footer-text-color);
+	color: var(--white-text-color);
 }
 
 .soc-network__link--bottom {
-    color: #ffffff;
+    color: var(--secondary-icon-color);
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -82,7 +82,7 @@
 	line-height: calc(16 / 14);
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: var(--footer-text-color);
+	color: var(--white-text-color);
 }
 
 .form-subscription {

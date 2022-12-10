@@ -15,13 +15,13 @@
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--secondary-text-color);
-	background-color: var(--filter-btn-bg-color);
+	background-color: var(--filter-btn-color);
 	transition: color 250ms var(--cubic), background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 
 	&:hover,
     &:focus,
     &--current {
-	color: var(--btn-text-color);
+	color: var(--white-text-color);
 	background-color: var(--accent-color);
 	box-shadow: var(--filter-btn-shadow);
 }

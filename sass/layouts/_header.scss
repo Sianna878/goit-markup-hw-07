@@ -11,7 +11,7 @@
 // логотип
 
 .logo__part-black {
-	color: var(--logo-part-color);
+	color: var(--black-text-color);
 }
 
 .page-header__logo {
@@ -89,7 +89,7 @@
 	font-size: 14px;
 	line-height: calc(16 / 14);
 	letter-spacing: 0.02em;
-	color: var(--main-text-color);
+	color: var(--primary-text-color);
 	align-items: center;
 	transition: color 250ms var(--cubic);
 

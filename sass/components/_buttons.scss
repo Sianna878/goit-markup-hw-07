@@ -11,9 +11,9 @@
 	justify-content: center;
 	text-align: center;
 	letter-spacing: 0.06em;
-	color: var(--btn-text-color);
-	background-color: var(--accent-color);
-	box-shadow: var(--btn-hero-shadow);
+	color: var(--white-text-color);
+	background-color: var(--btn-color);
+	box-shadow: var(--btn-shadow);
 	transition: background-color 250ms var(--cubic);
 }
 
@@ -23,5 +23,5 @@
 .subscribe-btn:focus,
 .order-btn:hover,
 .order-btn:focus  {
-	background-color: var(--secondary-accent-color);
+	background-color: var(--btn-accent-color);
 }

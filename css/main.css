@@ -1,46 +1,44 @@
 :root {
-  --main-bg-color: #ffffff;
-  --bg-hero-color: #c4c4c4;
-  --border-bg-color: #2f303a;
-  --section-team-bg-color: #f5f4fa;
-  --main-text-color: #757575;
+  --primary-text-color: #757575;
   --secondary-text-color: #212121;
+  --brand-color: #2196f3;
+  --black-text-color: #000000;
+  --white-text-color: #ffffff;
+  --footer-main-text-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
-  --secondary-accent-color: #188ce8;
-  --benefits-box-color: #f5f4fa;
-  --filter-btn-bg-color: #f5f4fa;
-  --logo-part-color: #000000;
-  --hero-title-color: #ffffff;
-  --btn-text-color: #ffffff;
-  --activity-text-color: #ffffff;
-  --logo-footer-color: #ffffff;
-  --footer-text-color: #ffffff;
-  --contact-footer-color: rgba(255, 255, 255, 0.6);
-  --bg-footer-icons: rgba(255, 255, 255, 0.1);
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --hero-bg-color: #c4c4c4;
+  --footer-bg-color: #2f303a;
+  --overlay-bg-color: rgba(33, 150, 243, 0.9);
+  --activity-bg-card-color: rgba(47, 48, 58, 0.8);
   --border-header-color: #ececec;
+  --border-input-modal-color: rgba(33, 33, 33, 0.2);
+  --border-footer-input-color: rgba(255, 255, 255, 0.3);
   --border-project-color: #eeeeee;
-  --soc-network-color: #afb1b8;
-  --secondary-social-color: #ffffff;
-  --bg-social-color: #ffffff;
-  --border-clients-color: #afb1b8;
-  --team-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --btn-color: #2196f3;
+  --btn-accent-color: #188ce8;
+  --btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --filter-btn-color: #f5f4fa;
   --filter-btn-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  --team-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --primary-icon-color: #afb1b8;
+  --secondary-icon-color: #ffffff;
+  --modal-icon-color: #212121;
+  --icon-bg-color: #ffffff;
+  --footer-icon-bg-color: rgba(255, 255, 255, 0.1);
+  --overlay-bg-color: rgba(33, 150, 243, 0.9);
   --projects-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
   	1px 4px 6px rgba(0, 0, 0, 0.16);
-  --btn-hero-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
-  --modal-bg-color: #ffffff;
-  --project-overlay-color: #ffffff;
   --modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  --overlay-bg-color: rgba(33, 150, 243, 0.9);
-  --main-form-color: #757575;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
 }
 
 .is-hidden {
@@ -118,7 +116,7 @@ address {
   font-size: 26px;
   line-height: 1.1923076923;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: var(--brand-color);
 }
 
 .hero-btn, .subscribe-btn, .order-btn {
@@ -132,9 +130,9 @@ address {
   justify-content: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--btn-text-color);
-  background-color: var(--accent-color);
-  box-shadow: var(--btn-hero-shadow);
+  color: var(--white-text-color);
+  background-color: var(--btn-color);
+  box-shadow: var(--btn-shadow);
   transition: background-color 250ms var(--cubic);
 }
 
@@ -144,7 +142,7 @@ address {
 .subscribe-btn:focus,
 .order-btn:hover,
 .order-btn:focus {
-  background-color: var(--secondary-accent-color);
+  background-color: var(--btn-accent-color);
 }
 
 .soc-network {
@@ -165,12 +163,12 @@ address {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  color: #afb1b8;
+  color: var(--primary-icon-color);
   transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 .soc-network__link:hover, .soc-network__link:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--secondary-icon-color);
 }
 
 .soc-network__icon {
@@ -183,7 +181,7 @@ address {
   line-height: 1.1666666667;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: var(--black-text-color);
 }
 
 .part-header {
@@ -195,7 +193,7 @@ address {
 }
 
 .logo__part-black {
-  color: var(--logo-part-color);
+  color: var(--black-text-color);
 }
 
 .page-header__logo {
@@ -261,7 +259,7 @@ address {
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
   align-items: center;
   transition: color 250ms var(--cubic);
 }
@@ -279,7 +277,7 @@ address {
   height: 600px;
   padding: 200px 0;
   margin: 0 auto;
-  background-color: var(--bg-hero-color);
+  background-color: var(--hero-bg-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -301,7 +299,7 @@ address {
   line-height: 1.3636363636;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--hero-title-color);
+  color: var(--white-text-color);
 }
 
 .benefits {
@@ -320,7 +318,7 @@ address {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  background-color: var(--benefits-box-color);
+  background-color: var(--secondary-bg-color);
   border-radius: 4px;
 }
 
@@ -337,7 +335,7 @@ address {
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
 }
 
 .page-activity {
@@ -363,7 +361,7 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(47, 48, 58, 0.8);
+  background-color: var(--activity-bg-card-color);
 }
 
 .activity__item-title {
@@ -373,11 +371,11 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--activity-text-color);
+  color: var(--white-text-color);
 }
 
 .page-team {
-  background-color: var(--section-team-bg-color);
+  background-color: var(--secondary-bg-color);
 }
 
 .team-member {
@@ -388,7 +386,7 @@ address {
 .team-member__item {
   flex-basis: calc((100% - 90px) / 4);
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--main-bg-color);
+  background-color: var(--primary-bg-color);
   box-shadow: var(--team-card-shadow);
 }
 
@@ -413,7 +411,7 @@ address {
   line-height: 1.1875;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
 }
 
 .clients {
@@ -433,9 +431,9 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--border-clients-color);
+  border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
-  color: var(--soc-network-color);
+  color: var(--primary-icon-color);
   transition: color 250ms var(--cubic), border 250ms var(--cubic);
 }
 .clients__link:hover, .clients__link:focus {
@@ -449,7 +447,7 @@ address {
 
 .part-footer {
   padding: 60px 0;
-  background-color: var(--border-bg-color);
+  background-color: var(--footer-bg-color);
 }
 
 .part-footer__container {
@@ -468,7 +466,7 @@ address {
 }
 
 .logo__part-white {
-  color: var(--logo-footer-color);
+  color: var(--white-text-color);
 }
 
 .auth-address__item:not(:last-child) {
@@ -478,7 +476,7 @@ address {
 .auth-address__link {
   font-size: 14px;
   line-height: 1.7142857143;
-  color: var(--contact-footer-color);
+  color: var(--footer-main-text-color);
   transition: color 250ms var(--cubic);
 }
 .auth-address__link:hover, .auth-address__link:focus {
@@ -486,7 +484,7 @@ address {
 }
 
 .auth-address__link--white {
-  color: var(--footer-text-color);
+  color: var(--white-text-color);
 }
 
 .soc-invite {
@@ -501,11 +499,11 @@ address {
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--footer-text-color);
+  color: var(--white-text-color);
 }
 
 .soc-network__link--bottom {
-  color: #ffffff;
+  color: var(--secondary-icon-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -521,7 +519,7 @@ address {
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--footer-text-color);
+  color: var(--white-text-color);
 }
 
 .form-subscription {
@@ -592,7 +590,7 @@ address {
   width: 528px;
   min-height: 581px;
   padding: 40px;
-  background-color: var(--modal-bg-color);
+  background-color: var(--primary-bg-color);
   border-radius: 4px;
   box-shadow: var(--modal-shadow);
   transform: translate(-50%, -50%) scale(1);
@@ -612,7 +610,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--modal-bg-color);
+  background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
@@ -629,7 +627,7 @@ address {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
 .order-form__field {
@@ -646,7 +644,7 @@ address {
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
-  color: var(--main-form-color);
+  color: var(--primary-text-color);
 }
 
 .order-form__wrap {
@@ -665,21 +663,21 @@ address {
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
-  color: var(--main-form-color);
+  color: var(--primary-text-color);
 }
 .order-form__input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
-  color: var(--main-form-color);
+  color: var(--primary-text-color);
 }
 .order-form__input::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
-  color: var(--main-form-color);
+  color: var(--primary-text-color);
 }
 .order-form__input:focus, .order-form__input:hover {
   border-color: var(--accent-color);
@@ -736,15 +734,15 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 7px;
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
 }
 
 .policy__icon {
-  fill: #ffffff;
+  fill: var(--secondary-icon-color);
   border: 2px solid #212121;
   border-radius: 2px;
   transition: border-color 250ms var(--cubic), background-color 250ms var(--cubic);
@@ -796,11 +794,11 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  background-color: var(--filter-btn-bg-color);
+  background-color: var(--filter-btn-color);
   transition: color 250ms var(--cubic), background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
 }
 .filter-set__btn:hover, .filter-set__btn:focus, .filter-set__btn--current {
-  color: var(--btn-text-color);
+  color: var(--white-text-color);
   background-color: var(--accent-color);
   box-shadow: var(--filter-btn-shadow);
 }
@@ -838,7 +836,7 @@ address {
   font-size: 18px;
   line-height: 1.5555555556;
   letter-spacing: 0.03em;
-  color: var(--project-overlay-color);
+  color: var(--white-text-color);
   background-color: var(--overlay-bg-color);
   transform: translateY(100%);
   transition: transform 250ms var(--cubic);
@@ -865,5 +863,5 @@ address {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  color: var(--main-text-color);
+  color: var(--primary-text-color);
 }/*# sourceMappingURL=main.css.map */
