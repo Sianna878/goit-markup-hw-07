@@ -47,10 +47,9 @@
 
 .menu__link {
 	position: relative;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: calc(16 / 14);
-	letter-spacing: 0.02em;
+
+	@include font(500, 14px, calc(16 / 14), 0.02em);
+	
 	color: var(--secondary-text-color);
 	transition: color 250ms var(--cubic);
 
@@ -85,10 +84,8 @@
 // контакти власників сайту
 
 .auth-contacts__link {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: calc(16 / 14);
-	letter-spacing: 0.02em;
+	@include font(500, 14px, calc(16 / 14), 0.02em);	
+		
 	color: var(--primary-text-color);
 	align-items: center;
 	transition: color 250ms var(--cubic);

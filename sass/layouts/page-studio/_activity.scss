@@ -26,11 +26,10 @@
 }
 
 .activity__item-title {
-	font-weight: 700;
-	font-size: 14px;
-	line-height: calc(16 / 14);
+
+	@include font(700, 14px, calc(16 / 14), 0.03em);
+		
 	text-align: center;
-	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--white-text-color);
 }

@@ -10,28 +10,30 @@
 }
 
 .benefits__icon-wrap {
-	display: flex;
 	width: 270px;
 	height: 120px;
+	margin-bottom: 30px;
+
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 30px;
+	
 	background-color: var(--secondary-bg-color);
 	border-radius: 4px;
 }
 
 .benefits__title {
 	margin-bottom: 10px;
-	font-size: 14px;
-	line-height: calc(16 / 14);
-	letter-spacing: 0.03em;
+
+	@include font(null, 14px, calc(16 / 14), 0.03em);
+	
 	text-transform: uppercase;
 	color: var(--secondary-text-color);
 }
 
 .benefits__text {
-	font-size: 14px;
-	line-height: calc(24 / 14);
-	letter-spacing: 0.03em;
+
+	@include font(null, 14px, calc(24 / 14), 0.03em);
+	
 	color: var(--primary-text-color);
 }

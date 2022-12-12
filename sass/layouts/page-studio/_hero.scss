@@ -20,10 +20,9 @@
 .page-hero__title {
 	width: 696px;
 	margin-bottom: 30px;
-	font-weight: 900;
-	font-size: 44px;
-	line-height: calc(60 / 44);
-	letter-spacing: 0.06em;
+
+	@include font(900, 44px, calc(60 / 44), 0.06em);
+		
 	text-transform: uppercase;
 	color: var(--white-text-color);
 }
